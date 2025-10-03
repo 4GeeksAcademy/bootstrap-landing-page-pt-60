@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fender Squire - Detalle del Producto | CuerdaViva</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">CuerdaViva</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="products.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html">Carrito</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <nav aria-label="breadcrumb" class="mb-4">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="products.html">Productos</a></li>
+                <li class="breadcrumb-item active">Fender Squire</li>
+            </ol>
+        </nav>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div id="productCarousel" class="carousel slide mb-4">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://images.unsplash.com/photo-1651517375734-ec389e57bb0e?q=80&w=1332&auto=format&fit=crop" class="d-block w-100" alt="Fender Squire Vista 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1520637836862-4d197d17c79a?q=80&w=1332&auto=format&fit=crop" class="d-block w-100" alt="Fender Squire Vista 2">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1332&auto=format&fit=crop" class="d-block w-100" alt="Fender Squire Vista 3">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <h1 class="h2 mb-3">Fender Squire Stratocaster</h1>
+                <div class="mb-3">
+                    <span class="badge bg-success">En Stock</span>
+                    <span class="ms-2 text-muted">SKU: FST-001</span>
+                </div>
+                
+                <div class="mb-3">
+                    <h3 class="text-primary">$250.00</h3>
+                    <small class="text-muted text-decoration-line-through">$300.00</small>
+                    <span class="badge bg-danger ms-2">17% OFF</span>
+                </div>
+
+                <p class="lead mb-4">
+                    Guitarra eléctrica ideal para principiantes y músicos intermedios. 
+                    Construcción sólida con excelente relación calidad-precio.
+                </p>
+
+                <div class="mb-4">
+                    <label for="quantity" class="form-label">Cantidad:</label>
+                    <div class="input-group" style="width: 150px;">
+                        <button class="btn btn-outline-secondary" type="button">-</button>
+                        <input type="number" class="form-control text-center" value="1" min="1" max="10">
+                        <button class="btn btn-outline-secondary" type="button">+</button>
+                    </div>
+                </div>
+
+                <div class="d-grid gap-2 d-md-block mb-4">
+                    <button class="btn btn-primary btn-lg me-2">Agregar al Carrito</button>
+                    <button class="btn btn-success btn-lg">Comprar Ahora</button>
+                </div>
+
+                <div class="mb-4">
+                    <h5>Características principales:</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-check-circle text-success"></i> Cuerpo de álamo</li>
+                        <li><i class="bi bi-check-circle text-success"></i> Mástil de arce</li>
+                        <li><i class="bi bi-check-circle text-success"></i> 3 pastillas single coil</li>
+                        <li><i class="bi bi-check-circle text-success"></i> Trémolo vintage</li>
+                        <li><i class="bi bi-check-circle text-success"></i> 21 trastes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tabs de información -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <ul class="nav nav-tabs" id="productTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="description-tab" data-bs-toggle="tab" data-bs-target="#description" type="button">Descripción</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="specifications-tab" data-bs-toggle="tab" data-bs-target="#specifications" type="button">Especificaciones</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="reviews-tab" data-bs-toggle="tab" data-bs-target="#reviews" type="button">Reseñas (12)</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="productTabsContent">
+                    <div class="tab-pane fade show active" id="description">
+                        <div class="p-4">
+                            <p>La Fender Squire Stratocaster es una guitarra eléctrica excepcional que combina la tradición y el sonido icónico de Fender con un precio accesible. Diseñada para músicos de todos los niveles, esta guitarra ofrece versatilidad tonal y comodidad de ejecución.</p>
+                            <p>Con su cuerpo de álamo y mástil de arce, proporciona un tono equilibrado perfecto para rock, blues, pop y muchos otros estilos musicales.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="specifications">
+                        <div class="p-4">
+                            <table class="table table-striped">
+                                <tr><td><strong>Cuerpo:</strong></td><td>Álamo</td></tr>
+                                <tr><td><strong>Mástil:</strong></td><td>Arce</td></tr>
+                                <tr><td><strong>Diapasón:</strong></td><td>Arce</td></tr>
+                                <tr><td><strong>Trastes:</strong></td><td>21</td></tr>
+                                <tr><td><strong>Pastillas:</strong></td><td>3 Single Coil</td></tr>
+                                <tr><td><strong>Puente:</strong></td><td>Trémolo Vintage</td></tr>
+                                <tr><td><strong>Controles:</strong></td><td>1 Volumen, 2 Tonos</td></tr>
+                                <tr><td><strong>Peso:</strong></td><td>3.2 kg aprox.</td></tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="reviews">
+                        <div class="p-4">
+                            <div class="row mb-4">
+                                <div class="col-md-4">
+                                    <div class="text-center">
+                                        <h3>4.5/5</h3>
+                                        <div class="text-warning mb-2">★★★★☆</div>
+                                        <p class="text-muted">Basado en 12 reseñas</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span class="me-2">5★</span>
+                                        <div class="progress flex-grow-1 me-2">
+                                            <div class="progress-bar" style="width: 60%"></div>
+                                        </div>
+                                        <span>8</span>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span class="me-2">4★</span>
+                                        <div class="progress flex-grow-1 me-2">
+                                            <div class="progress-bar" style="width: 25%"></div>
+                                        </div>
+                                        <span>3</span>
+                                    </div>
+                                    <div class="d-flex align-items-center mb-2">
+                                        <span class="me-2">3★</span>
+                                        <div class="progress flex-grow-1 me-2">
+                                            <div class="progress-bar" style="width: 8%"></div>
+                                        </div>
+                                        <span>1</span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="border-bottom pb-3 mb-3">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <strong>Carlos M.</strong>
+                                    <span class="text-warning">★★★★★</span>
+                                </div>
+                                <p>"Excelente guitarra para empezar. Muy buena calidad de construcción y sonido increíble para el precio."</p>
+                                <small class="text-muted">Hace 2 días</small>
+                            </div>
+                            
+                            <div class="border-bottom pb-3 mb-3">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <strong>Ana L.</strong>
+                                    <span class="text-warning">★★★★☆</span>
+                                </div>
+                                <p>"Muy contenta con la compra. La entrega fue rápida y el empaque excelente."</p>
+                                <small class="text-muted">Hace 1 semana</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Productos relacionados -->
+        <div class="row mt-5">
+            <div class="col-12">
+                <h3 class="mb-4">Productos Relacionados</h3>
+                <div class="row g-3">
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1650892243335-a0934906798c?q=80&w=1171&auto=format&fit=crop" class="card-img-top" alt="Bateria" style="height:150px; object-fit:cover;">
+                            <div class="card-body">
+                                <h6 class="card-title">Bateria Symbian</h6>
+                                <p class="card-text">$1250</p>
+                                <a href="#" class="btn btn-sm btn-warning">Ver</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="card">
+                            <img src="https://images.unsplash.com/photo-1629907451365-6731862a0d32?q=80&w=687&auto=format&fit=crop" class="card-img-top" alt="Saxofon" style="height:150px; object-fit:cover;">
+                            <div class="card-body">
+                                <h6 class="card-title">Saxofon</h6>
+                                <p class="card-text">$950</p>
+                                <a href="#" class="btn btn-sm btn-warning">Ver</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-3 my-4 bg-light">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="products.html" class="nav-link px-2 text-body-secondary">Productos</a></li>
+            <li class="nav-item"><a href="cart.html" class="nav-link px-2 text-body-secondary">Carrito</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">Acerca de</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-body-secondary">Contacto</a></li>
+        </ul>
+        <p class="text-center text-body-secondary">© 2025 CuerdaViva - Worldwide</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

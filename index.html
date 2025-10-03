@@ -10,13 +10,64 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
-            <div>
-                <i class="fa-solid fa-drum-steelpan mx-2 text-primary"></i>
-                <a class="navbar-brand text-primary" href="#">CuerdaViva</a>
+            <a class="navbar-brand fw-bold" href="index.html">
+                <i class="fa-solid fa-music me-2"></i>
+                CuerdaViva
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="products.html">Todos los Productos</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=guitars">Guitarras</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=drums">Baterías</a></li>
+                            <li><a class="dropdown-item" href="products.html?category=wind">Instrumentos de Viento</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="products.html?category=accessories">Accesorios</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contacto</a>
+                    </li>
+                </ul>
+                
+                <div class="d-flex align-items-center">
+                    <form class="d-flex me-3" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">
+                            <i class="fa-solid fa-search"></i>
+                        </button>
+                    </form>
+                    
+                    <a href="cart.html" class="btn btn-outline-light me-2 position-relative">
+                        <i class="fa-solid fa-shopping-cart"></i>
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark">
+                            3
+                        </span>
+                    </a>
+                    
+                    <a href="login.html" class="btn btn-outline-light">
+                        <i class="fa-solid fa-user me-1"></i>
+                        Login
+                    </a>
+                </div>
             </div>
-            <button class="btn btn-outline-primary" type="submit">Login</button>
         </div>
     </nav>
 
@@ -57,7 +108,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Fender Squire</h5>
                         <p class="card-text">$250</p>
-                        <a href="#" class="btn btn-warning">Detalles</a>
+                        <a href="product-detail.html?id=1" class="btn btn-warning">Detalles</a>
                     </div>
                 </div>
             </div>
@@ -69,7 +120,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Bateria Symbian</h5>
                         <p class="card-text">$1250</p>
-                        <a href="#" class="btn btn-warning">Detalles</a>
+                        <a href="product-detail.html?id=2" class="btn btn-warning">Detalles</a>
                     </div>
                 </div>
             </div>
@@ -81,7 +132,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Saxofon</h5>
                         <p class="card-text">$950</p>
-                        <a href="#" class="btn btn-warning">Detalles</a>
+                        <a href="product-detail.html?id=3" class="btn btn-warning">Detalles</a>
                     </div>
                 </div>
             </div>
@@ -93,11 +144,11 @@
     <div class="container">
         <footer class="py-3 my-4">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Guitarras</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Baterias</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Preguntas Frecuentas</a></li>
-                <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Acerca de Nosotros</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="products.html?category=guitars" class="nav-link px-2 text-body-secondary">Guitarras</a></li>
+                <li class="nav-item"><a href="products.html?category=drums" class="nav-link px-2 text-body-secondary">Baterías</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link px-2 text-body-secondary">Contacto</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">Acerca de Nosotros</a></li>
             </ul>
             <p class="text-center text-body-secondary">© 2025 CuerdaViva - Worldwide</p>
         </footer>
